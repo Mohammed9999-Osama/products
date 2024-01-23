@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>my page</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- start tags -->
+  <div class="w-75 mx-auto py-5">
+    <h2 class="text-center">create products</h2>
+    <label for="pn" class="mb-3">product name</label>
+    <input type="text" id="pn" class="form-control mb-3">
+    <label for="pp" class="mb-3">product price</label>
+    <input type="number" id="pp" class="form-control mb-3">
+    <label for="pc" class="mb-3">product category</label>
+    <input type="number" id="pc" class="form-control mb-3">
+    <label for="pd" class="mb-3">product description</label>
+    <textarea style="min-height: 200px;" id="pd" class="form-control"></textarea>
+    <button id="add"  onclick="producatAction()" class="btn btn-success btn-sm mt-4">ADD</button>
+    
+</div>
+<!-- end form -->
+<!-- end form -->
+<!-- end form -->
+<!-- end form -->
+
+
+
+<div class="w-75 mx-auto">
+
+  <label for="scr"class="fs-3 text-capitalize">sreach</label>
+  <input type="text" onkeyup="search(this.value)" id="scr" class="mb-4 form-control mt-2">
+  <table class="table  table-striped ">
+    <thead>
+      <tr>
+        <th>index</th>
+        <th>product name</th>
+        <th>price</th>
+        <th>category</th>
+        <th>description</th>
+        <th>update</th>
+        <th>deleted</th>
+      </tr>
+    </thead>
+    <tbody id="tbody">
+      
+    </tbody>
+  </table>
+</div>
+  <script src="main.js"></script>
+</body>
+</html>
